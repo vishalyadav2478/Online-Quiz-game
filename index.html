@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quize Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Online Quiz Game</h1>
+        <div class="progress">
+            <div class="progress-bar" id="progress"></div>
+        </div>
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+            <div class="controls">
+                <button id="prev" disabled>Previous</button>
+                <button id="next">Next</button>
+                <button id="submit" style="display: none;">Submit Quiz</button>
+            </div>
+        </div>
+        <div class="score-container" id="score-container">
+            <h2>Quiz Completed!</h2>
+            <p>Your score: <span id="score">0</span> out of <span id="total">0</span></p>
+            <button id="restart">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
